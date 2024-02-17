@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.secretos{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 15px;
+}
+
+.secretos .secreto{
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #c5c5c5;
+    border-width: 2px;
+    padding: 25px;
+    background-color: #606060;
+    text-align: center;
+    box-shadow: 1px 5px 15px #000000;
+    color: white;
+}

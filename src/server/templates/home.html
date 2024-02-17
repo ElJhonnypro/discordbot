@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ver secretos shh!</title>
+    <link rel="stylesheet" href="{{url_for('cssreturn',filename='style.css')}}">
+  </head>
+  <body>
+    <h1 style="text-align: center;">secretos</h1>
+    <div class="secretos">
+    {% for secreto in database %}
+    <div class="secreto">
+      <h3>Usuario: {{ secreto[1] }}</h3>
+      <h3>Secreto: {{ secreto[2] }}</h3>
+      <h3>Servidor: {{ secreto[3] }}</h3>
+    </div>
+    {% endfor %}
+  </div>
+  </body>
+</html>
